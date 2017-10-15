@@ -1,4 +1,4 @@
-#DaveCoin#
+#DaveCoin
 
 ##A simple Javascript exercise learning how to create a blockchain.
 

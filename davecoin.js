@@ -57,4 +57,10 @@ daveCoin.addBlock(new Block(1, '10/12/2017', { amount: 2 }));
 daveCoin.addBlock(new Block(1, '10/13/2017', { amount: 3 }));
 
 console.log('Is blockchain valid? ' + daveCoin.isChainValid());
+
+daveCoin.chain[1].data = { amount : 100 };
+daveCoin.chain[1].hash = daveCoin.chain[1].calculateHash();
+
+console.log('Is blockchain valid? ' + daveCoin.isChainValid());
+
 console.log(JSON.stringify(daveCoin, null, 4));
